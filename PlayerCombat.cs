@@ -54,7 +54,7 @@ public class PlayerCombat : MonoBehaviour
         // Look for input once the animation has played X% (openQueueTime) of the current animation
         if (queuedAttack == false && animator.GetCurrentAnimatorStateInfo(0).normalizedTime >= openQueueTime)
         {
-            if (Input.GetButtonDown("Attack"))
+            if (Input.GetButtonDown("Fire1"))
             {
                 queuedAttack = true;
             }
