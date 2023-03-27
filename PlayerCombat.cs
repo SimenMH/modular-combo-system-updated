@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ChainableAttack : MonoBehaviour
+public class PlayerCombat : MonoBehaviour
 {
     public Animator animator;
     public List<AttackSO> attacks;
