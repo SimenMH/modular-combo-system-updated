@@ -33,7 +33,6 @@ public class PlayerCombat : MonoBehaviour
         return false;
     }
 
-    //
     void Update()
     {
         if (attackInProgress)
