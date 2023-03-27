@@ -33,6 +33,13 @@ public class PlayerCombat : MonoBehaviour
         return false;
     }
 
+    void Attack()
+    {
+        // Set attack animation and play it
+        animator.runtimeAnimatorController = attacks[chainCounter].animatorOV;
+        animator.Play("Attack", 0, 0);
+    }
+
     void Update()
     {
         if (attackInProgress)
@@ -40,13 +47,6 @@ public class PlayerCombat : MonoBehaviour
             LookForQueuedAttack();
             CheckIfAttackFinished();
         }
-    }
-
-    void Attack()
-    {
-        // Set attack animation and play it
-        animator.runtimeAnimatorController = attacks[chainCounter].animatorOV;
-        animator.Play("Attack", 0, 0);
     }
     
     void LookForQueuedAttack()
