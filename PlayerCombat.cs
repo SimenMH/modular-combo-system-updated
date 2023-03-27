@@ -14,9 +14,9 @@ public class PlayerCombat : MonoBehaviour
     
     // I personally do not use this variable since I am using a state machine that handles initializing a new attack and running it
     // but I have added it for this example. It should work fine like this too
-    public bool attackInProgress;
+    private bool attackInProgress;
     
-    private float openQueueTime = 0.3f; // How far into the attack animation before we start looking for input [0.0 - 1.0]
+    public float openQueueTime = 0.3f; // How far into the attack animation before we start looking for input [0.0 - 1.0]
     public float attackCooldown = 0.5f; // How long before we can start a new attack chain once the previous chain has reset
     public float resetChainTime = 1f; // How long it takes for the chain counter to reset to 0
 
