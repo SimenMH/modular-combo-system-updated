@@ -46,7 +46,7 @@ public class PlayerCombat : MonoBehaviour
         {
             LookForQueuedAttack();
             CheckIfAttackFinished();
-        }
+        } // You can add an else check here that looks for input and calls InitializeAttack()
     }
     
     void LookForQueuedAttack()
